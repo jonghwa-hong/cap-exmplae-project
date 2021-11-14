@@ -1,18 +1,39 @@
-<mvc:View
-    controllerName="com.hong.bookshop.controller.MainView"
-    xmlns:mvc="sap.ui.core.mvc"
-    displayBlock="true"
-    xmlns="sap.m"
->
-	<Shell id="shell">
+<mvc:View controllerName="com.hong.bookshop.controller.MainView"
+	xmlns:mvc="sap.ui.core.mvc" displayBlock="true"  xmlns:table="sap.ui.table"
+	xmlns="sap.m">
 		<App id="app">
 			<pages>
-				<Page id="page" title="{i18n>title}">
+				<Page id="page" title="{i18n>treeTable}">
 					<content>
-						<Text text='asdasda'/>
+							<table:TreeTable id="treeTable" selectionMode="Single" enableColumnReordering="false">
+								<table:columns>
+									<table:Column label="Description">
+										<table:template>
+											<Text text="{Description}" wrapping="false" />
+										</table:template>
+									</table:Column>
+
+									<table:Column label="HierarchyLevel">
+										<table:template>
+											<Text text="{HierarchyLevel}" wrapping="false" />
+										</table:template>
+									</table:Column>
+
+									<table:Column label="NodeID">
+										<table:template>
+											<Text text="{NodeID}" wrapping="false" />
+										</table:template>
+									</table:Column>
+
+									<table:Column label="ParentNodeID">
+										<table:template>
+											<Text text="{ParentNodeID}" wrapping="false" />
+										</table:template>
+									</table:Column>
+								</table:columns>
+							</table:TreeTable>
 					</content>
 				</Page>
 			</pages>
 		</App>
-	</Shell>
 </mvc:View>

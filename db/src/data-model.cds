@@ -22,10 +22,15 @@ entity Orders : managed {
 }
 
 entity Hierarchy {
-    key ID : Integer;
-    hierarchyName        : String;
-    hierarchyDescription : String;
-    parent               : Association to Hierarchy;
-    children             : Composition of many Hierarchy
-                               on children.parent = $self;
+    @sap.hierarchy.node.for: 'NodeID'
+    @edmanno.StoreGeneratedPattern: 'Identity'
+    key NodeID : Integer;
+    @sap.hierarchy.level.for: 'NodeID'
+    HierarchyLevel        : Integer;
+    Description : String;
+    @sap.hierarchy.parent.node.for: 'NodeID'
+    ParentNodeID               : Integer default null;
+    @sap.hierarchy.drill.state.for: 'NodeID'
+    DrillState             : String default 'expanded';
+                               
 }
