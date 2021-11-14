@@ -47,7 +47,8 @@
         "kind": "sqlite",
         "model": [
           "./srv/cat-service/",
-          "./srv/hierarchy-service/"
+          "./srv/hierarchy-service/",
+          "./srv/menu-service/"
         ],
         "credentials": {
           "database": "bookshop.db"

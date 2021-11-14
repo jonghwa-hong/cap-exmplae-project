@@ -34,3 +34,11 @@ entity Hierarchy {
     DrillState             : String default 'expanded';
                                
 }
+
+entity Menu {
+    key ID : Integer; // menu code
+    menuName             : String;
+    subheader : String;
+    footer: String;
+    icon : String;          
+}

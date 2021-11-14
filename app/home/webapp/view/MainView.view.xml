@@ -1,0 +1,18 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m"
+  xmlns:f="sap.f" controllerName="com.hong.home.controller.MainView" height="100%">
+  <f:DynamicPage id="dynamicPageId">
+
+    <f:content>
+      <FlexBox items="{/Menu}">
+        <items>
+        <GenericTile id="treeTableTile" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{menuName}" subheader="{subheader}" press="press">
+          <TileContent footer="{footer}">
+            <ImageContent src="{icon}" />
+          </TileContent>
+        </GenericTile>
+        </items>
+      </FlexBox>
+    </f:content>
+  </f:DynamicPage>
+</mvc:View>

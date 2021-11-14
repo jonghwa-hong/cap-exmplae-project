@@ -1,0 +1,17 @@
+<mvc:View xmlns="sap.f"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:m="sap.m"
+	displayBlock="true"
+	controllerName="com.hong.home.controller.App"
+	height="100%">
+	<m:Page>
+		<m:customHeader>
+			<ShellBar title="Home">
+				<profile>
+					<m:Avatar initials="User"/>
+				</profile>
+			</ShellBar>
+		</m:customHeader>
+		<m:App id="app"/>
+	</m:Page>
+</mvc:View>
