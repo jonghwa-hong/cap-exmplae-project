@@ -7,7 +7,7 @@ sap.ui.define([
 	function (Controller) {
 		"use strict";
 
-		return Controller.extend("com.hong.hierarchy.controller.MainView", {
+		return Controller.extend("com.hong.bookshop.controller.MainView", {
 			onInit: function () {
 
 			}

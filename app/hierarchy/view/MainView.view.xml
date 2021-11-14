@@ -1,4 +1,4 @@
-<mvc:View controllerName="com.hong.bookshop.controller.MainView"
+<mvc:View controllerName="com.hong.hierarchy.controller.MainView"
 	xmlns:mvc="sap.ui.core.mvc" displayBlock="true"  xmlns:table="sap.ui.table"
 	xmlns="sap.m">
 		<App id="app">

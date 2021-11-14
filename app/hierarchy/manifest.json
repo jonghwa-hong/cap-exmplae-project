@@ -1,7 +1,7 @@
 {
   "_version": "1.32.0",
   "sap.app": {
-    "id": "com.hong.bookshop",
+    "id": "com.hong.hierarchy",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -41,7 +41,7 @@
   "sap.ui5": {
     "flexEnabled": false,
     "rootView": {
-      "viewName": "com.hong.bookshop.view.MainView",
+      "viewName": "com.hong.hierarchy.view.MainView",
       "type": "XML",
       "async": true,
       "id": "MainView"
@@ -63,7 +63,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "com.hong.bookshop.i18n.i18n"
+          "bundleName": "com.hong.hierarchy.i18n.i18n"
         }
       },
       "": {
@@ -89,7 +89,7 @@
         "routerClass": "sap.m.routing.Router",
         "viewType": "XML",
         "async": true,
-        "viewPath": "com.hong.bookshop.view",
+        "viewPath": "com.hong.hierarchy.view",
         "controlAggregation": "pages",
         "controlId": "app",
         "clearControlAggregation": false

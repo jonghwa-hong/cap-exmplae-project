@@ -46,6 +46,20 @@
       "async": true,
       "id": "app"
     },
+    "componentUsages": {
+			"bookshopComponent": {
+				"name": "com.hong.bookshop",
+				"settings": {},
+				"componentData": {},
+				"lazy": true
+			},
+			"hierarchyComponent": {
+				"name": "com.hong.hierarchy",
+				"settings": {},
+				"componentData": {},
+				"lazy": true
+			}
+		},
     "dependencies": {
 			"minUI5Version": "1.96.0",
       "libs": {
@@ -104,14 +118,38 @@
           "name": "home",
           "target": "Home",
           "layout": "OneColumn"
-        }
+        },
+        {
+					"name": "bookshop",
+					"pattern": "bookshop",
+					"target": {
+						"name": "bookshop",
+						"prefix": "b"
+					}
+				},
+				{
+					"name": "hierarchy",
+					"pattern": "hierarchy",
+					"target": {
+						"name": "hierarchy",
+						"prefix": "h"
+					}
+				}
       ],
       "targets": {
         "Home": {
           "viewId": "mainView",
           "viewName": "MainView",
           "clearControlAggregation": false
-        }
+        },
+        "bookshop": {
+					"type": "Component",
+					"usage": "bookshopComponent"
+				},
+				"hierarchy": {
+					"type": "Component",
+					"usage": "hierarchyComponent"
+				}
       }
     }
   }

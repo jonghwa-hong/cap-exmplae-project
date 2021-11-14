@@ -6,7 +6,7 @@
     <f:content>
       <FlexBox items="{/Menu}">
         <items>
-        <GenericTile id="treeTableTile" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{menuName}" subheader="{subheader}" press="press">
+        <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{menuName}" subheader="{subheader}" press="press">
           <TileContent footer="{footer}">
             <ImageContent src="{icon}" />
           </TileContent>

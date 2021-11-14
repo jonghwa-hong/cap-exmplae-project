@@ -9,7 +9,7 @@
 		"openui5",
 		"sapui5"
 	],
-	"main": "webapp/index.html",
+	"main": "./index.html",
 	"scripts": {
 		"start": "fiori run --open 'index.html'",
 		"start-local": "fiori run --config ./ui5-local.yaml --open 'test/flpSandbox.html'",

@@ -5,7 +5,7 @@ sap.ui.define([
 	function (Controller,ODataModel) {
 		"use strict";
 
-		return Controller.extend("com.hong.bookshop.controller.MainView", {
+		return Controller.extend("com.hong.hierarchy.controller.MainView", {
 			onInit: function () {
 					this.setTreeTableModel(this.getTreeTable());
 			},

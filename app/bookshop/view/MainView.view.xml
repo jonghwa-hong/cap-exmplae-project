@@ -1,5 +1,5 @@
 <mvc:View
-    controllerName="com.hong.hierarchy.controller.MainView"
+    controllerName="com.hong.bookshop.controller.MainView"
     xmlns:mvc="sap.ui.core.mvc"
     displayBlock="true"
     xmlns="sap.m"
