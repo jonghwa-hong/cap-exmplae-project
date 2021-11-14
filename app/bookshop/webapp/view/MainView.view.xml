@@ -7,25 +7,25 @@
 					<content>
 							<table:TreeTable id="treeTable" selectionMode="Single" enableColumnReordering="false">
 								<table:columns>
-									<table:Column label="Description">
+									<table:Column label="{i18n>Description}">
 										<table:template>
 											<Text text="{Description}" wrapping="false" />
 										</table:template>
 									</table:Column>
 
-									<table:Column label="HierarchyLevel">
+									<table:Column label="{i18n>HierarchyLevel}">
 										<table:template>
 											<Text text="{HierarchyLevel}" wrapping="false" />
 										</table:template>
 									</table:Column>
 
-									<table:Column label="NodeID">
+									<table:Column label="{i18n>NodeID}">
 										<table:template>
 											<Text text="{NodeID}" wrapping="false" />
 										</table:template>
 									</table:Column>
 
-									<table:Column label="ParentNodeID">
+									<table:Column label="{i18n>ParentNodeID}">
 										<table:template>
 											<Text text="{ParentNodeID}" wrapping="false" />
 										</table:template>
