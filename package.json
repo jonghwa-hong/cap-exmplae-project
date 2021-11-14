@@ -9,9 +9,6 @@
     "@sap/cds": "^5",
     "express": "^4"
   },
-  "devDependencies": {
-    "sqlite3": "^5.0.2"
-  },
   "scripts": {
     "start": "cds run"
   },
@@ -40,12 +37,19 @@
       "require-atomic-updates": "off"
     }
   },
+  "devDependencies": {
+    "sqlite3": "^5.0.2"
+  },
   "cds": {
     "requires": {
       "db": {
         "kind": "sqlite",
+        "model": [
+          "./srv/cat-service/",
+          "./srv/hierarchy-service/"
+        ],
         "credentials": {
-          "database": "db/my-bookshop.db"
+          "database": "bookshop.db"
         }
       }
     }

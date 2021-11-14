@@ -1,5 +1,5 @@
 namespace my.bookshop;
-using { Country, managed } from '@sap/cds/common';
+using { Country, managed , cuid} from '@sap/cds/common';
 
 entity Books {
   key ID : Integer;
@@ -19,4 +19,13 @@ entity Orders : managed {
   book    : Association to Books;
   country : Country;
   amount  : Integer;
+}
+
+entity Hierarchy {
+    key ID : Integer;
+    hierarchyName        : String;
+    hierarchyDescription : String;
+    parent               : Association to Hierarchy;
+    children             : Composition of many Hierarchy
+                               on children.parent = $self;
 }
