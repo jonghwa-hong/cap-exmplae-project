@@ -6,15 +6,3 @@ service hierarchyService {
     @Capabilities : {Deletable : false}
     entity Hierarchy as projection on my.Hierarchy
 }
-
-annotate hierarchyService.Hierarchy with @(
-  UI: {
-    LineItem: [
-      {Value: NodeID, Label: 'node id'},
-      {Value: HierarchyLevel, Label:'hierarchy level'},
-      {Value: Description},
-      {Value: ParentNodeID},
-      {Value: DrillState, Label:' '},
-    ],
-  }
-);

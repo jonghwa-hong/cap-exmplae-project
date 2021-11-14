@@ -1,16 +1,21 @@
-<mvc:View
-    controllerName="com.hong.bookshop.controller.MainView"
-    xmlns:mvc="sap.ui.core.mvc"
-    displayBlock="true"
-    xmlns="sap.m"
->
-	<Shell id="shell">
-		<App id="app">
-			<pages>
-				<Page id="page" title="{i18n>title}">
-					<content />
-				</Page>
-			</pages>
-		</App>
-	</Shell>
+<mvc:View controllerName="com.hong.bookshop.controller.MainView"
+	xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+	xmlns="sap.m"
+	xmlns:smartFilterBar="sap.ui.comp.smartfilterbar"
+	xmlns:smartTable="sap.ui.comp.smarttable"
+	xmlns:f="sap.f">
+	<App id="app">
+		<VBox fitContainer="true">
+			<smartFilterBar:SmartFilterBar id="smartFilterBar">
+				<smartFilterBar:layoutData>
+					<FlexItemData shrinkFactor="0" />
+				</smartFilterBar:layoutData>
+			</smartFilterBar:SmartFilterBar>
+			<smartTable:SmartTable id="smartTable" smartFilterId="smartFilterBar" useExportToExcel="true" useVariantManagement="false" useTablePersonalisation="false" showRowCount="true" class="sapUiResponsiveContentPadding">
+				<smartTable:layoutData>
+					<FlexItemData growFactor="1" baseSize="0%" />
+				</smartTable:layoutData>
+			</smartTable:SmartTable>
+		</VBox>
+	</App>
 </mvc:View>

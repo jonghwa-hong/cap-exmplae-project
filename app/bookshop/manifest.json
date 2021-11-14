@@ -68,12 +68,16 @@
       },
       "": {
         "dataSource": "mainService",
-        "preload": true,
         "settings": {
-          "operationMode": "Server",
-					"groupId": "$auto",
-          "synchronizationMode": "None",
-          "autoExpandSelect": true
+            "synchronizationMode": "None",
+            "operationMode": "Server",
+            "autoExpandSelect": true,
+            "earlyRequests": true,
+            "groupProperties": {
+                "default": {
+                    "submit": "Auto"
+                }
+            }
         }
       }
     },
@@ -96,13 +100,13 @@
       },
       "routes": [
         {
-          "name": "home",
-          "pattern": "",
-          "target": ["Home"]
+          "name": "RouteMainView",
+          "pattern": "RouteMainView",
+          "target": ["TargetMainView"]
         }
       ],
       "targets": {
-        "Home": {
+        "TargetMainView": {
           "viewType": "XML",
           "transition": "slide",
           "clearControlAggregation": false,
